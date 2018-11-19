@@ -1,8 +1,10 @@
 .masthead {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+  align-items: center;
+  border-top: 1px solid $light-gray;
 	border-bottom: 2px solid black;
+  margin-top: 10px;
 	position: relative;
 }
 
@@ -25,6 +27,10 @@
 	color: $dark-gray;
 }
 
+.language-nav li:first-child {
+  font-weight: bold;
+}
+
 .language-nav ul {
 	display: flex;
 }
@@ -40,11 +46,16 @@
 	font-size: 11px;
 	margin-top: 10px;
 	margin-bottom: 10px;
+  justify-content: row;
+}
+
+.masthead-links ul {
+  display: flex;
 }
 
 .masthead-links li {
 	margin-left: 10px;
-	border-right: 1px solid $light-gray;
+
 }
 
 .masthead-links button {
