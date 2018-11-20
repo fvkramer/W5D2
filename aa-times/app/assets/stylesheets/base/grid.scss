@@ -2,18 +2,25 @@
   // ...
 }
 
+.main {
+  display: flex
+}
+
 /* Attribute selector targeting all elements
 with a class attribute containing 'col-' */
 [class*='col-'] {
-  // ...
+  display: flex;
 }
 
 [class*='col-']:last-of-type {
-  // ...
+  background-color: pink;
+  background-image: url('https://cdn.pixabay.com/photo/2015/10/12/15/01/cat-984097_960_720.jpg')
+
 }
 
 @media all and (max-width: 1000px) {
   [class*='col-'] {
     // width:
+    display: block;
   }
 }
